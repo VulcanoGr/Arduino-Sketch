@@ -1,6 +1,6 @@
 /*
 KIT 05 Sensor- Estado de animo
-Problemas al sujetar el servo
+Problemas al sujetar el servo, sujetar con cables, NO CON LOS PINCHOS
 */
 
 //Incluir la libreria Servo
@@ -15,7 +15,7 @@ int angle;
 void setup() {
   // definimos el servo y abrimos la comunicacion serial
   
-  myServo.attach(9);
+  myServo.attach(9); // puerto PWM 9
   
   Serial.begin(9600);
 }
